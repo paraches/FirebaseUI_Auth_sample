@@ -27,6 +27,13 @@ class ViewController: UIViewController, FUIAuthDelegate {
 
     override func viewDidAppear(_ animated: Bool) {
         if let authViewController = authUI?.authViewController() {
+            if let sheet = authViewController.sheetPresentationController {
+                sheet.detents = [.medium()]
+                sheet.largestUndimmedDetentIdentifier = .medium
+                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+                sheet.prefersEdgeAttachedInCompactHeight = true
+                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached = true
+            }
             self.present(authViewController, animated: true)
         }
     }
@@ -35,5 +42,9 @@ class ViewController: UIViewController, FUIAuthDelegate {
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         if let user = user { print("user:\n\(user.uid)") } else { print("error:\n\(error!)")}
+    }
+    
+    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
+        return CustomAuthPickerViewController.init(nibName: "CustomAuthPickerViewController", bundle: nil, authUI: authUI)
     }
 }

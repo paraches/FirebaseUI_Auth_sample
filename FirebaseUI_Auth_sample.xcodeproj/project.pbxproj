@@ -16,6 +16,8 @@
 		B39E20BD284F40AC00D2BFBB /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B39E20BC284F40AC00D2BFBB /* FirebaseAuthUI */; };
 		B39E20BF284F40AC00D2BFBB /* FirebaseGoogleAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B39E20BE284F40AC00D2BFBB /* FirebaseGoogleAuthUI */; };
 		B39E20C1284F40AC00D2BFBB /* FirebaseOAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B39E20C0284F40AC00D2BFBB /* FirebaseOAuthUI */; };
+		B3C94085285DA62E00BD3FF8 /* CustomAuthPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C94084285DA62E00BD3FF8 /* CustomAuthPickerViewController.swift */; };
+		B3C94087285DA69600BD3FF8 /* CustomAuthPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C94086285DA69600BD3FF8 /* CustomAuthPickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B39E20AC284F328B00D2BFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39E20AE284F328B00D2BFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B39E20C2284F507300D2BFBB /* FirebaseUI_Auth_sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseUI_Auth_sample.entitlements; sourceTree = "<group>"; };
+		B3C94084285DA62E00BD3FF8 /* CustomAuthPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthPickerViewController.swift; sourceTree = "<group>"; };
+		B3C94086285DA69600BD3FF8 /* CustomAuthPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAuthPickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				B39E20A9284F328B00D2BFBB /* Assets.xcassets */,
 				B39E20AB284F328B00D2BFBB /* LaunchScreen.storyboard */,
 				B39E20AE284F328B00D2BFBB /* Info.plist */,
+				B3C94084285DA62E00BD3FF8 /* CustomAuthPickerViewController.swift */,
+				B3C94086285DA69600BD3FF8 /* CustomAuthPickerViewController.xib */,
 			);
 			path = FirebaseUI_Auth_sample;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39E20AD284F328B00D2BFBB /* LaunchScreen.storyboard in Resources */,
+				B3C94087285DA69600BD3FF8 /* CustomAuthPickerViewController.xib in Resources */,
 				B39E20AA284F328B00D2BFBB /* Assets.xcassets in Resources */,
 				B39E20A8284F328900D2BFBB /* Main.storyboard in Resources */,
 			);
@@ -155,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39E20A5284F328900D2BFBB /* ViewController.swift in Sources */,
+				B3C94085285DA62E00BD3FF8 /* CustomAuthPickerViewController.swift in Sources */,
 				B39E20A1284F328900D2BFBB /* AppDelegate.swift in Sources */,
 				B39E20A3284F328900D2BFBB /* SceneDelegate.swift in Sources */,
 			);
